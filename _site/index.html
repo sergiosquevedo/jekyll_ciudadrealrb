@@ -39,39 +39,48 @@
 					}
 		</style>
 	</section>
+
 	<section class="slide">
-		<h2>¿Qué es Jekyll?</h2>
-		<ul>
-			<li>Es un motor de generación de sites estáticos </li>
-			<li class="next">Es una gema de ruby</li>
-			<li class="next">Crear contenidos con markdown y plantillas con HTML5/CSS3/JS</li>
-			<li class="next">Altamente personalizable, escalando mediante plugins</li>
-			<li class="next">Puedes usar dominio propio</li>
-			<li class="next">Permite publicarse en github</li>
-		</ul>
-		<p class="note">Fué creado por <a href="https://twitter.com/mojombo">Tom Preston Werner</a>, co-fundador de <a  href="https://github.com/">GitHub</a></p>
+	   <img src="pictures/jekyll_website.png" alt="jekyll website" class="shout shrink">
 	</section>
 
 	<section class="slide">
-		<h2>Páginas dinámicas</h2>
-		<p>Los sitios web dinámicos requieren de una BBDD donde almacenar contenido, plantillas, un lenguaje de programación que permita extraer contenido de BBDD y componerlo en dicha plantilla.
-		Un sitio web dinámico puede tener los siguientes inconvenientes:</p>
+		<p>Un sitio web dinámico puede tener los siguientes inconvenientes:</p>
 		<ul>
 			<li class="next">Complejidad</li>
 			<li class="next">Costo y Rendimiento</li>
 			<li class="next">Obsolecencia</li>
-		</il>
+		</ul>
+		<p>Las páginas estáticas, por el contrario, tienen los siguientes problemas:</p>
+		<ul>
+			<li class="next">Debes conocer HTML para poder actualizarlas</li>
+			<li class="next">Dificil jerarquizar un proyecto</li>
+			<li class="next">El principio <mark class="important">DRY</mark> es dificil de cumplir</li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>¿Qué es <a href="http://jekyllrb.com">Jekyll</a>?</h2>
+		<ul>
+			<li>Es un motor de generación de sites estáticos creado por <a href="https://twitter.com/mojombo"> Tom Preston Werner</a></li>
+			<li>Es una gema de ruby</li>
+			<li>Crear contenidos con markdown y plantillas con HTML5/CSS3/JS</li>
+			<li>Altamente personalizable, escalando mediante plugins</li>
+			<p class="note">Tom es también co-fundador de <a  href="https://github.com/">GitHub</a> <img class="next" align="right" src="pictures/Tom_Preston_Werner.jpg"></p>
+		</ul>
 	</section>
 
 	<section class="slide">
 		<h2>¿Por qué Jekyll?</h2>
-		<p>El clásico problema con las páginas estáticas era la dificultad para poder mantenerlas. Jekyll permite gestionar dichos sitios estáticos de forma sencilla.</p>
 		<ul>
-		    <li class="next">Es simple, versátil... y funciona!</li>
-			<li class="next">Todo queda bastante ordenado</li>
-			<li class="next">Se puede comprometer en Git</li>
-			<li class="next">Tiene su propio servidor para probar el sitio</li>
-			<li class="next">Olvidarte de buscar un hosting adecuado.</li>
+		    <li>Es simple, versátil... y funciona!</li>
+			<li>Todo queda bastante ordenado</li>
+			<li>Se puede comprometer en Git</li>
+			<li>Tiene su propio servidor para probar el sitio</li>
+			<li>Olvidarte de buscar un hosting adecuado.</li>
+			<li>Rapidez de respuesta</li>
+			<li>Puedes usar dominio propio</li>
+			<li>Seguridad</li>
 		</ul>
 	</section>
 
@@ -80,8 +89,29 @@
 	</section>
 
 	<section class="slide">
-		<h2>¿y todo esto cómo funciona?</h2>
-		<p></p>
+		<h2>¿Y todo esto cómo funciona?</h2>
+		<p>
+			Simplemente, el motor Jekyll procesará todo archivo que contenga un bloque <mark>YAML</mark> como un archivo especial. Este bloque YAML debe estar al principio del archivo y se identifica mediante 3 guiones, tal que así:
+			<pre>
+				<code> --- </code>
+				<code> layout: post </code>
+				<code> title: blogueando like a monster </code>
+				<code> --- </code>
+			</pre>
+		</p>
+	</section>
+
+	<section class="slide">
+		<h2>El ingrediente del monstruo... LIQUID</h2>
+		<p>
+			Liquid es un lenguaje para plantillas, creado por <a href="https://www.shopify.com/">Shopify</a> y escrito en ruby. Permite incorporar lógica en las plantillas pero que dicha ĺógica no se ejecute en el servidor. Jekyll utiliza el motor liquid para renderizar la página en el layout definido. 
+		</p>
+		<img align="right" src="pictures/probeta2.png">
+	</section>
+
+	<section class="slide">
+		<img src="pictures/example2.png" alt="Ejemplo post">
+		<img align="right" class="next" src="pictures/example3.png" alt="Ejemplo post">
 	</section>
 
 	<section class="slide">
@@ -89,19 +119,67 @@
       	<img align="center" src="pictures/JekyllHyde.jpg" alt="">
 	</section>
 
-	<section class="slide grid">
+	<section class="slide">
 		<img src="pictures/gemInstall.png" alt="Instalacion gema">
 		<img align="right" src="pictures/serverJekyll.png" alt="Levantar servidor">
 	</section>
 
+	<section class="slide">
+		<img class="cover" src="pictures/config1.png">
+	</section>
+
+	<section class="slide">
+		<img class="cover" src="pictures/config2.png">
+	</section>
+
+	<section class="slide">
+		<img class="cover" src="pictures/post.png">
+	</section>
+
+    <section class="slide">
+		<img class="cover" src="pictures/liquidTags.png">
+	</section>
+
+	<section class="slide">
+		<h2>Asociar un dominio propio</h2>
+		<p>Para asociar un dominio propio, hemos de crear el archivo CNAME en la raiz del sitio y agregar al mismo nuestro dominio:</p>
+
+		<pre>
+			<code>squevedo.name</code>
+			<code></code>
+		</pre>
+
+	</section>
+
+	<section class="slide">
+		<h2>Jekyll themes</h2>
+		<a href="http://jekyllthemes.org/">jekyllthemes.org</a>
+		<img src="pictures/jekyllthemes.png">
+	</section>
+	<section class="slide">
+	    <h2> Algunos ejemplos reales</h2>
+		<li> <a href="http://squevedo.name/">My blog personal</a></li>
+		<li>El sitio web de <a href="http://ciudadrealrb.org/">CiudadReal.rb</a></li>
+		<li><a href="https://jekyllrb.com">El mismo jekyllrb.com</a></li>
+	</section>
+
+	<section class="slide">
+		<h2>MUCHAS GRACIAS</h2>
+		<img align="middle" src="pictures/jekyllFin.jpg">
+	</section>
+
+	<section class="slide">
+		<img class="cover" src="pictures/ciudadrealRB.png">
+	</section>
+
 	<p class="badge">
-		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
+		<a href="https://github.com/sergiosquevedo/jekyll_ciudadrealrb">Fork me on GitHub</a>
 	</p>
 	<!--
 		To hide progress bar from entire presentation
-		just remove “progress” element.
+		just remove “progress” element. -->
 		
-	<div class="progress"></div>-->
+	<div class="progress"></div>-
 	<script src="shower/shower.min.js"></script>
 	<!-- Copyright © 2015 Yours Truly, Famous Inc. -->
 	<!-- Photos by John Carey, fiftyfootshadows.net -->
