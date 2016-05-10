@@ -39,45 +39,49 @@
 					}
 		</style>
 	</section>
+
 	<section class="slide">
-		<h2>¿Qué es Jekyll?</h2>
-		<ul>
-			<li>Es un motor de generación de sites estáticos </li>
-			<li class="next">Es una gema de ruby</li>
-			<li class="next">Crear contenidos con markdown y plantillas con HTML5/CSS3/JS</li>
-			<li class="next">Altamente personalizable, escalando mediante plugins</li>
-			<li class="next">Puedes usar dominio propio</li>
-			<li class="next">Permite publicarse en github</li>
-		</ul>
-		<p class="note">Fué creado por <a href="https://twitter.com/mojombo">Tom Preston Werner</a>, co-fundador de <a  href="https://github.com/">GitHub</a></p>
+	   <img src="pictures/jekyll_website.png" alt="jekyll website" class="shout shrink">
 	</section>
 
-
 	<section class="slide">
-		<h2>Páginas dinámicas</h2>
-		<p>Los sitios web dinámicos requieren de una BBDD donde almacenar contenido, plantillas, un lenguaje de programación que permita extraer contenido de BBDD y componerlo en dicha plantilla.
-		Un sitio web dinámico puede tener los siguientes inconvenientes:</p>
+		<p>Un sitio web dinámico puede tener los siguientes inconvenientes:</p>
 		<ul>
 			<li class="next">Complejidad</li>
 			<li class="next">Costo y Rendimiento</li>
 			<li class="next">Obsolecencia</li>
-		</il>
-	</section>
-
-	<section class="slide">
-		<h2>¿Por qué Jekyll?</h2>
-		<p>El clásico problema con las páginas estáticas era la dificultad para poder mantenerlas. Jekyll permite gestionar dichos sitios estáticos de forma sencilla.</p>
+		</ul>
+		<p>Las páginas estáticas, por el contrario, tienen los siguientes problemas:</p>
 		<ul>
-		    <li class="next">Es simple, versátil... y funciona!</li>
-			<li class="next">Todo queda bastante ordenado</li>
-			<li class="next">Se puede comprometer en Git</li>
-			<li class="next">Tiene su propio servidor para probar el sitio</li>
-			<li class="next">Olvidarte de buscar un hosting adecuado.</li>
+			<li class="next">Debes conocer HTML para poder actualizarlas</li>
+			<li class="next">Dificil jerarquizar un proyecto</li>
+			<li class="next">El principio <mark class="important">DRY</mark> es dificil de cumplir</li>
 		</ul>
 	</section>
 
 	<section class="slide">
-	   <img src="pictures/jekyll_website.png" alt="jekyll website" class="cover">
+		<h2>¿Qué es <a href="http://jekyllrb.com">Jekyll</a>?</h2>
+		<ul>
+			<li>Es un motor de generación de sites estáticos creado por <a href="https://twitter.com/mojombo"> Tom Preston Werner</a></li>
+			<li>Es una gema de ruby</li>
+			<li>Crear contenidos con markdown y plantillas con HTML5/CSS3/JS</li>
+			<li>Altamente personalizable, escalando mediante plugins</li>
+			<p class="note">Tom es también co-fundador de <a  href="https://github.com/">GitHub</a> <img class="next" src="pictures/Tom_Preston_Werner.jpg"></p>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<h2>¿Por qué Jekyll?</h2>
+		<ul>
+		    <li>Es simple, versátil... y funciona!</li>
+			<li>Todo queda bastante ordenado</li>
+			<li>Se puede comprometer en Git</li>
+			<li>Tiene su propio servidor para probar el sitio</li>
+			<li>Olvidarte de buscar un hosting adecuado.</li>
+			<li>Rapidez de respuesta</li>
+			<li>Puedes usar dominio propio</li>
+			<li>Permite publicarse en github</li>
+		</ul>
 	</section>
 
 	<section class="slide">
@@ -100,7 +104,7 @@
 	<section class="slide">
 		<h2>El ingrediente del monstruo... LIQUID</h2>
 		<p>
-			Liquid es un lenguaje para plantillas, creado por <a href="https://www.shopify.com/">Shopify</a> y escrito en ruby. Permite incorporar lógica en las plantillas pero que dicha ĺógica no se ejecute en el servidor. Jekyll utiliza el motor liquid para renderizar la página en el lalyout definido. 
+			Liquid es un lenguaje para plantillas, creado por <a href="https://www.shopify.com/">Shopify</a> y escrito en ruby. Permite incorporar lógica en las plantillas pero que dicha ĺógica no se ejecute en el servidor. Jekyll utiliza el motor liquid para renderizar la página en el layout definido. 
 		</p>
 		<img align="right" src="pictures/probeta2.png">
 	</section>
