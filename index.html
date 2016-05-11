@@ -47,25 +47,25 @@
 	<section class="slide">
 		<p>Un sitio web dinámico puede tener los siguientes inconvenientes:</p>
 		<ul>
-			<li class="next">Complejidad</li>
-			<li class="next">Costo y Rendimiento</li>
-			<li class="next">Obsolecencia</li>
+			<li class="next">Complejidad<./li>
+			<li class="next">Coste y Rendimiento.</li>
+			<li class="next">Obsolescencia.</li>
 		</ul>
 		<p>Las páginas estáticas, por el contrario, tienen los siguientes problemas:</p>
 		<ul>
-			<li class="next">Debes conocer HTML para poder actualizarlas</li>
-			<li class="next">Dificil jerarquizar un proyecto</li>
-			<li class="next">El principio <mark class="important">DRY</mark> es dificil de cumplir</li>
+			<li class="next">Debes conocer HTML para poder actualizarlas.</li>
+			<li class="next">Dificil jerarquizar un proyecto.</li>
+			<li class="next">El principio <mark class="important">DRY</mark> es dificil de cumplir.</li>
 		</ul>
 	</section>
 
 	<section class="slide">
 		<h2>¿Qué es <a href="http://jekyllrb.com">Jekyll</a>?</h2>
 		<ul>
-			<li>Es un motor de generación de sites estáticos creado por <a href="https://twitter.com/mojombo"> Tom Preston Werner</a></li>
-			<li>Es una gema de ruby</li>
-			<li>Crear contenidos con markdown y plantillas con HTML5/CSS3/JS</li>
-			<li>Altamente personalizable, escalando mediante plugins</li>
+			<li>Es un motor de generación de sites estáticos creado por <a href="https://twitter.com/mojombo"> Tom Preston Werner en 2008</a></li>
+			<li>Es una gema de ruby.</li>
+			<li>Crear contenidos con markdown y plantillas con HTML5/CSS3/JS.</li>
+			<li>Altamente personalizable, escalando mediante plugins.</li>
 			<p class="note">Tom es también co-fundador de <a  href="https://github.com/">GitHub</a> <img class="next" align="right" src="pictures/Tom_Preston_Werner.jpg"></p>
 		</ul>
 	</section>
@@ -74,13 +74,13 @@
 		<h2>¿Por qué Jekyll?</h2>
 		<ul>
 		    <li>Es simple, versátil... y funciona!</li>
-			<li>Todo queda bastante ordenado</li>
-			<li>Se puede comprometer en Git</li>
-			<li>Tiene su propio servidor para probar el sitio</li>
+			<li>Todo queda bastante ordenado.</li>
+			<li>Se puede comprometer en Git.</li>
+			<li>Tiene su propio servidor para probar el sitio.</li>
 			<li>Olvidarte de buscar un hosting adecuado.</li>
-			<li>Rapidez de respuesta</li>
-			<li>Puedes usar dominio propio</li>
-			<li>Seguridad</li>
+			<li>Rapidez de respuesta.</li>
+			<li>Puedes usar dominio propio.</li>
+			<li>Seguridad.</li>
 		</ul>
 	</section>
 
@@ -104,7 +104,7 @@
 	<section class="slide">
 		<h2>El ingrediente del monstruo... LIQUID</h2>
 		<p>
-			Liquid es un lenguaje para plantillas, creado por <a href="https://www.shopify.com/">Shopify</a> y escrito en ruby. Permite incorporar lógica en las plantillas pero que dicha ĺógica no se ejecute en el servidor. Jekyll utiliza el motor liquid para renderizar la página en el layout definido. 
+			Liquid es un lenguaje para plantillas, creado por <a href="https://www.shopify.com/">Shopify</a> y escrito en ruby. Permite incorporar lógica en las plantillas pero que dicha ĺógica no se ejecute en el servidor. Jekyll utiliza el motor liquid para renderizar el contenido del post en el layout definido y crearte la estructura de datos con la que poder trabajar.
 		</p>
 		<img align="right" src="pictures/probeta2.png">
 	</section>
@@ -112,6 +112,24 @@
 	<section class="slide">
 		<img src="pictures/example2.png" alt="Ejemplo post">
 		<img align="right" class="next" src="pictures/example3.png" alt="Ejemplo post">
+	</section>
+
+	<section class="slide">
+		<h2>Estructurando...</h2>
+		<ul>
+			<li>Imports</li>
+				<ol>
+					<li>footer.html</li>
+					<li>head.html</li>
+					<li>nav.html</li>
+				</ol>
+			<li>Layouts</li>
+				<ol>
+					<li>default.html</li>
+					<li>post.html</li>
+					<li>404.html</li>
+				</ol>
+		</ul>
 	</section>
 
 	<section class="slide">
@@ -155,7 +173,7 @@
 
 	<section class="slide">
 		<h2>Asociar un dominio propio</h2>
-		<p>Para asociar un dominio propio, hemos de crear el archivo CNAME en la raiz del sitio y agregar al mismo nuestro dominio:</p>
+		<p>Para asociar un dominio propio, hemos de crear el archivo CNAME en la raíz del sitio y agregar al mismo nuestro dominio:</p>
 
 		<pre>
 			<code>squevedo.name</code>
